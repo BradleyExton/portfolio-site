@@ -1,10 +1,19 @@
 module.exports = {
   metadata: {
     title: "Bradley Exton",
-    siteUrl: "bradleyexton.ca",
+    siteUrl: "https://bradleyexton.ca",
     description: "Bradley Exton is a front end developer from Ottawa, Canada",
     image: "/social_image.png",
     twitterUsername: "@ExtonBradley",
+  },
+  manifest: {
+    name: "BradleyExton",
+    short_name: "BradleyExton",
+    start_url: "/",
+    background_color: "#fffff",
+    theme_color: "#24A148",
+    display: "minimal-ui",
+    icon: "src/images/logo.png",
   },
   socialMedia: [
     {
@@ -24,9 +33,4 @@ module.exports = {
       url: "https://www.linkedin.com/in/bradley-exton-7aa347136/",
     },
   ],
-
-  colors: {
-    green: "#24A148",
-    purple: "#A2257F",
-  },
 };
