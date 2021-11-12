@@ -14,5 +14,12 @@ module.exports = {
         ...manifest,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`poppins`, `caveat`],
+        display: "swap",
+      },
+    },
   ],
 };
