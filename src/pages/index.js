@@ -1,7 +1,8 @@
 import React from "react";
+import { Layout } from "@components";
 
 const Home = () => {
-  return <h1>Hello Gatsby!</h1>;
+  return <Layout></Layout>;
 };
 
 export default Home;
