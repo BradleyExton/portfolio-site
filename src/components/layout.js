@@ -1,12 +1,15 @@
 import React from "react";
-import { GlobalStyle } from "@styles";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle, theme } from "@styles";
 
 const Layout = ({ children }) => {
   return (
-    <div>
-      <GlobalStyle />
-      <div>{children}</div>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <>{children}</>
+      </ThemeProvider>
+    </>
   );
 };
 
