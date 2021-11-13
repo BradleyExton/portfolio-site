@@ -7,7 +7,7 @@ const colors = {
 };
 
 const theme = {
-  colors: {
+  color: {
     primary: colors.green,
     secondary: colors.purple,
     background: colors.white,
@@ -19,9 +19,13 @@ const theme = {
       paragraph: colors.black,
       link: colors.blue,
     },
-    blobs: {
+    blob: {
       primary: colors.green,
       secondary: colors.purple,
+    },
+    icon: {
+      primary: colors.white,
+      secondary: colors.green,
     },
   },
   borderRadius: "4px",

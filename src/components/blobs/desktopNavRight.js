@@ -1,6 +1,11 @@
 import React from "react";
+import styled from "styled-components";
 
-const DesktopNavRight = () => (
+const Path = styled.path`
+  fill: ${({ theme, color }) => color || theme.color.blob.primary};
+`;
+
+const DesktopNavRight = ({ color }) => (
   <svg
     width="374"
     height="86"
@@ -8,11 +13,11 @@ const DesktopNavRight = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
+    <Path
+      color={color}
       d="M640.11 -176.579C603.987 -94.8926 621.762 20.602 580.813 63.128C539.864 105.654 440.215 74.6283 345.845 71.6886C251.475 68.7488 162.432 92.7291 110.231 64.6069C58.0293 36.4845 42.0479 -44.2758 37.1236 -112.484C32.223 -181.275 38.3793 -237.513 26.7694 -299.419C15.8279 -361.954 -12.8799 -430.157 7.36513 -485.107C26.9655 -540.01 94.8739 -581.612 165.001 -646.041C235.129 -710.47 306.83 -797.678 362.111 -781.985C417.416 -766.875 456.348 -650.031 501.198 -583.596C546.048 -517.162 596.863 -502.303 657.351 -472.466C717.839 -442.628 788.022 -398.395 777.782 -352.316C767.541 -306.237 676.877 -258.312 640.11 -176.579Z"
-      fill="#24A148"
     />
   </svg>
 );
 
-export default DesktopNavRightBlob;
+export default DesktopNavRight;
