@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Name } from "@components";
+import { FadeIn } from "@components/animations";
 import { H2 } from "@components/typography";
 
 const Section = styled.section`
@@ -10,11 +11,14 @@ const Section = styled.section`
   flex-direction: column;
   height: 100vh;
 `;
+
 const Hero = () => {
   return (
     <Section>
       <Name />
-      <H2>Front End Web Developer</H2>
+      <FadeIn>
+        <H2>Front End Web Developer</H2>
+      </FadeIn>
     </Section>
   );
 };

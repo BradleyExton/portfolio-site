@@ -9,7 +9,7 @@ const Rect = styled.rect`
   fill: ${({ theme, color }) => color || theme.color.icon.primary};
 `;
 
-const Twitter = () => (
+const Twitter = ({ color }) => (
   <svg
     width="42"
     height="43"

@@ -5,7 +5,7 @@ const Path = styled.path`
   fill: ${({ theme, color }) => color || theme.color.icon.primary};
 `;
 
-const Hamburger = () => (
+const Hamburger = ({ color }) => (
   <svg
     width="48"
     height="41"
