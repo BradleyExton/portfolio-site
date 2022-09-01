@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { DesktopNavRight, DesktopNavLeft } from "../blobs";
+import { DesktopNavRight, DesktopNavLeft } from "@components/blobs";
 import { FadeIn } from "@components/animations";
 
 const WrapperWithFadeIn = styled(FadeIn)`
@@ -8,11 +8,25 @@ const WrapperWithFadeIn = styled(FadeIn)`
   justify-content: space-between;
 `;
 
+const SocialMediaNavWrapper = styled.div``;
+
+const SocialMediaLinks = styled.div``;
+
+const InternalLinksWrapper = styled.div``;
+
+const InternalLinks = styled.nav``;
+
 const DesktopNavigation = () => {
   return (
     <WrapperWithFadeIn>
-      <DesktopNavLeft />
-      <DesktopNavRight />
+      <SocialMediaNavWrapper>
+        <DesktopNavLeft />
+        <SocialMediaLinks>Test</SocialMediaLinks>
+      </SocialMediaNavWrapper>
+      <InternalLinksWrapper>
+        <DesktopNavRight />
+        <InternalLinks>test</InternalLinks>
+      </InternalLinksWrapper>
     </WrapperWithFadeIn>
   );
 };
