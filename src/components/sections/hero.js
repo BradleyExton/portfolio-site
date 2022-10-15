@@ -17,7 +17,7 @@ const Hero = () => {
     <Section>
       <Name />
       <FadeIn>
-        <H2>Front End Web Developer</H2>
+        <H2>Web Developer</H2>
       </FadeIn>
     </Section>
   );

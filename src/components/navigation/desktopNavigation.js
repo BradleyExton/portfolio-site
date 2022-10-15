@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { DesktopNavRight, DesktopNavLeft } from "@components/blobs";
 import { Instagram, Twitter, Github } from "@components/icons";
 import { FadeIn } from "@components/animations";
+import { NavLink } from "@components/typography";
 
 const WrapperWithFadeIn = styled(FadeIn)`
   display: flex;
@@ -28,9 +29,22 @@ const SocialMediaLinks = styled.div`
 
 const ExternalLink = styled.a``;
 
-const InternalLinksWrapper = styled.div``;
+const InternalNavWrapper = styled.div`
+  position: relative;
+`;
 
-const InternalLinks = styled.nav``;
+const InternalNav = styled.nav`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 69%;
+  width: 73%;
+`;
 
 const DesktopNavigation = () => {
   return (
@@ -52,10 +66,20 @@ const DesktopNavigation = () => {
           </ExternalLink>
         </SocialMediaLinks>
       </SocialMediaNavWrapper>
-      <InternalLinksWrapper>
+      <InternalNavWrapper>
         <DesktopNavRight />
-        <InternalLinks></InternalLinks>
-      </InternalLinksWrapper>
+        <InternalNav>
+          <NavLink secondary href="#About">
+            About
+          </NavLink>
+          <NavLink secondary href="#Skills">
+            Skills
+          </NavLink>
+          <NavLink secondary href="#work">
+            Work
+          </NavLink>
+        </InternalNav>
+      </InternalNavWrapper>
     </WrapperWithFadeIn>
   );
 };

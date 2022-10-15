@@ -8,9 +8,9 @@ const Html5 = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_17_425)">
-      <g clip-path="url(#clip1_17_425)">
-        <g clip-path="url(#clip2_17_425)">
+    <g clipPath="url(#clip0_17_425)">
+      <g clipPath="url(#clip1_17_425)">
+        <g clipPath="url(#clip2_17_425)">
           <path
             d="M9.70128 34.2024L6.57153 0.00119019H40.9598L37.8276 34.1976L23.7437 38L9.70128 34.2024Z"
             fill="#E44D26"
