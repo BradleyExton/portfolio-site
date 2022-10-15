@@ -10,3 +10,4 @@ export { default as Javascript } from "./javascript";
 export { default as ReactJS } from "./reactJS";
 export { default as MongoDB } from "./mongoDB";
 export { default as Twitter } from "./twitter";
+export { default as Instagram } from "./instagram";
