@@ -9,7 +9,7 @@ const Section = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
 `;
 
 const Hero = () => {

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { SCREEN_SIZES } from "@utils";
 
 export const H2 = styled.h2`
   font-size: ${({ theme }) => theme.fontSize.h2};
@@ -6,6 +7,9 @@ export const H2 = styled.h2`
     secondary ? theme.color.text.secondary : theme.color.text.primary};
   font-weight: lighter;
   user-select: none;
+  @media (max-width: ${SCREEN_SIZES.TABLET}px) {
+    font-size: ${({ theme }) => theme.fontSize.h3};
+  }
 `;
 
 export const NavLink = styled.a`

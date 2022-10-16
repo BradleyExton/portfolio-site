@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { SCREEN_SIZES } from "@utils";
 
 const SVG = styled.svg`
   height: fit-content;
@@ -9,14 +10,29 @@ const SVG = styled.svg`
     }
   }
 
-  @keyframes fill {
-    from {
-      width: 100%;
-      fill: transparent;
+  @media (min-width: ${SCREEN_SIZES.TABLET}px) {
+    @keyframes fill {
+      from {
+        width: 100%;
+        fill: transparent;
+      }
+      to {
+        width: 60%;
+        fill: ${({ theme }) => theme.color.blob.primary};
+      }
     }
-    to {
-      width: 50%;
-      fill: ${({ theme }) => theme.color.blob.primary};
+  }
+
+  @media (max-width: ${SCREEN_SIZES.TABLET}px) {
+    @keyframes fill {
+      from {
+        width: 100%;
+        fill: transparent;
+      }
+      to {
+        width: 80%;
+        fill: ${({ theme }) => theme.color.blob.primary};
+      }
     }
   }
   path {
@@ -89,6 +105,7 @@ const H1 = styled.h1`
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 90%;
 `;
 
 const Span = styled.span`
