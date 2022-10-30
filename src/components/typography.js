@@ -20,3 +20,10 @@ export const NavLink = styled.a`
   text-decoration: none;
   user-select: none;
 `;
+
+export const CallToActionText = styled.p`
+  transition: color 1s ease-out;
+  font-size: ${({ theme }) => theme.fontSize.navLinks};
+  color: ${({ theme, secondary }) =>
+    secondary ? theme.color.text.secondary : theme.color.text.primary};
+`;
